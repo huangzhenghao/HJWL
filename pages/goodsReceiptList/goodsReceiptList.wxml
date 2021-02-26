@@ -1,0 +1,44 @@
+<view>
+    <my-header id="HEADER"></my-header>
+    <view class="sum-box flex around f12 bg2">
+        <Text>体积：{{goodsRexeList.fieidSum(Getdoheadlist, 'volume',2)}}</Text>
+        <Text>重量：{{goodsRexeList.fieidSum(Getdoheadlist, 'weight',2)}}</Text>
+        <Text>件数：{{goodsRexeList.fieidSum(Getdoheadlist, 'quan')}}</Text>
+        <Text>订单：{{Getdoheadlist.length}}</Text>
+    </view>
+    <!-- 列表部分 -->
+    <scroll-view scroll-y="{{true}}" class="list-box">
+        <view class="li-box flex between" wx:for="{{Getdoheadlist}}">
+            <view class="f1">
+                <view class="flex between f13">
+                    <Text>{{item.descity}}</Text>
+                    <Text>{{item.donum}}</Text>
+                    <Text>{{item.orderdate}}</Text>
+                </view>
+                <view>
+                    <Text class="f13">{{item.csgnname}}</Text>
+                </view>
+                <view>
+                    <Text class="f13 c5">{{item.address}}</Text>
+                </view>
+                <view class="flex between f13 c5">
+                    <Text>重量：{{item.weight}}</Text>
+                    <Text>体积：{{item.volume}}</Text>
+                    <Text>件数：{{item.quan}}</Text>
+                </view>
+            </view>
+            <view class="flex cent middle padd-l20">
+                <mp-icon icon="arrow" color="black" size="{{14}}"></mp-icon>
+            </view>
+        </view>
+    </scroll-view>
+</view>
+<wxs module="goodsRexeList">
+    module.exports.fieidSum = function(arr, key, num){
+        var res = 0;
+        for(var inx = 0;inx<arr.length;inx++){
+            res += arr[inx][key]
+        }
+        return res.toFixed(num || 0);
+    };
+</wxs>

@@ -1,0 +1,12 @@
+/**header.wxss**/
+@import '../../app.wxss';
+.box{
+    padding:8px;
+    background-image: linear-gradient(rgb(123,179,112), rgb(70,136,54));
+}
+.left-butt, .right-butt{
+    width:80rpx;
+    background-image: linear-gradient(rgb(161,201,141), rgb(109,166,73));
+    border-radius: 3px;
+    box-shadow: 0 0 2px #666;
+}

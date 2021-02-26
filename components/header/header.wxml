@@ -1,0 +1,9 @@
+<view class="box flex between">
+    <view class="left-butt tx-c">
+        <mp-icon icon="more" color="white" size="{{25}}"></mp-icon>
+    </view>
+    <Text class="c2">货物签收</Text>
+    <view class="left-butt tx-c">
+        <mp-icon icon="qr-code" color="white" size="{{25}}"></mp-icon>
+    </view>
+</view>

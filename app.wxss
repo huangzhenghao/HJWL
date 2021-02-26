@@ -1,0 +1,173 @@
+/**app.wxss**/
+/* @import '@/weui-miniprogram/weui-wxss/dist/style/weui.wxss'; */
+/* @import '../components/weui-wxss/dist/style/weui.wxss'; */
+@import 'weui.wxss';
+.container {
+  height: 100%;
+  box-sizing: border-box;
+} 
+/*清楚默认样式*/
+.no-mar{margin:0;}
+.no-padd{padding:0;}
+.mar-c{margin:0 auto;}
+.hh{border:1px solid red;}
+/*高度*/
+.h50{height:50%;}
+.h100{height:100%;}
+.h20p{height:20px;}
+.h30p{height:30px;}
+.h50p{height:50px;}
+.h60p{height:60px;}
+.h100p{height:100px;}
+.mh100p{min-height:100px;}
+.h100vh{height:100vh;}
+.h-auto{height:auto;}
+/*宽度*/
+.w20{width:20%;}
+.w30{width:30%;}
+.w32{width:33%;}
+.w35{width:35%;}
+.w40{width:40%;}
+.w45{width:45%;}
+.w50{width:50%;}
+.w60{width:60%;}
+.w70{width:70%;}
+.w80{width:80%;}
+.w90{width:90%;}
+.w100{width:100%;}
+.w20p{width:20px;}
+.w30p{width:30px;}
+.w50p{width:50px;}
+.w70p{width:70px;}
+.w80p{width:80px;}
+.w100p{width:100px;}
+.w120p{width:120px;}
+.w150p{width:150px;}
+/*文字大小*/
+.f10{font-size:10px;}
+.f12{font-size:12px;}
+.f13{font-size:13px;}
+.f14{font-size:14px;}
+.f20{font-size:20px;}
+.f25{font-size:25px;}
+.f30{font-size:30px;}
+/*文本对齐*/
+.tx-c{text-align:center;}
+.tx-r{text-align:right;}
+.tx-l{text-align:left;}
+/*文本样式*/
+.bold{font-weight:bold;}
+.itailc{font-style: italic;}
+.c1{color:#3366CC;}
+.c2{color:white;}
+.c3{color:rgb(85,138,228);}
+.c4{color:black;}
+.c5{color:rgb(102,102,102);}
+.c6{color:#169BD4;}
+.c7{color:rgb(61,142,223);}
+.c8{color:#333333;}
+.c9{color:red;}
+.c10{color:#42A26B;}
+/*背景色*/
+.bg1{background-color:#169BD4;}
+.bg2{background-color: rgba(242, 242, 242, 1);}
+.bg3{background-color: rgba(51, 153, 51, 1);}
+.bg4{background-color: rgba(51, 51, 153, 1);}
+.bg5{background-color: rgba(247, 247, 247, 1);}
+.bg6{background-color: white;}
+.bg7{background-color: rgba(153, 153, 153, 1);}
+.bg8{background-color: rgba(46, 55, 64, 1);}
+/*鼠标指针*/
+.point{cursor:pointer;}
+/*外边距*/
+.mar-t0{margin-top:0;}
+.mar-t10{margin-top:10px;}
+.mar-t15{margin-top:15px;}
+.mar-t20{margin-top:20px;}
+.mar-t25{margin-top:25px;}
+.mar-t30{margin-top:30px;}
+.mar-t50{margin-top:50px;}
+.mar-l10per{margin-left:10%;}
+.mar-l15per{margin-left:15%;}
+.mar-l20per{margin-left:20%;}
+.mar-l25per{margin-left:25%;}
+.mar-l10{margin-left:10px;}
+.mar-l20{margin-left:20px;}
+.mar-l30{margin-left:30px;}
+.mar-r10{margin-right:10px;}
+.mar-b0{margin-bottom:0;}
+.mar-b10{margin-bottom:10px;}
+.mar-b20{margin-bottom:20px;}
+.mar-b30{margin-bottom:30px;}
+.mar-b50{margin-bottom:50px;}
+.padd5{padding:5px;}
+.padd10{padding:10px;}
+.padd20{padding:20px;}
+.padd30{padding:30px;}
+.padd50{padding:50px;}
+.padd-t5{padding-top:5px;}
+.padd-t10{padding-top:10px;}
+.padd-t20{padding-top:20px;}
+.padd-t30{padding-top:30px;}
+.padd-t50{padding-top:50px;}
+.padd-b5{padding-bottom:5px;}
+.padd-b10{padding-bottom:10px;}
+.padd-b20{padding-bottom:20px;}
+.padd-b30{padding-bottom:30px;}
+.padd-b50{padding-bottom:50px;}
+.padd-l0{padding-left:0;}
+.padd-l10{padding-left:10px;}
+.padd-l20{padding-left:20px;}
+.padd-l30{padding-left:30px;}
+.padd-l50{padding-left:50px;}
+.padd-r0{padding-right:0;}
+.padd-r10{padding-right:10px;}
+.padd-r20{padding-right:20px;}
+.padd-r30{padding-right:30px;}
+.padd-r50{padding-right:50px;}
+/*盒子模型*/
+.flex{display:flex;}
+.between{justify-content: space-between;}
+.around{justify-content: space-around;}
+.cent{justify-content: center;}
+.middle{align-items: center;}
+.stretch{align-items: stretch;}
+.flex-col{flex-direction: column}
+.flex-wrap{flex-wrap:wrap;}
+.f1{flex: 1;}
+/*定位*/
+.abs{position: absolute;}
+.rela{position: relative;}
+.fixed{position: fixed;}
+/*透明度*/
+.opa08{opacity:.6;}
+/*文本下划线*/
+.underline{text-decoration: underline ;}
+.del-underline{text-decoration: none ;cursor:default;color:#606266;}
+/*文字间距*/
+.let-spac3{letter-spacing: 3px;}
+.width-auto{width:auto;}
+.wauto{width:auto !important;}
+.no-scroll::-webkit-scrollbar {display:none}
+/* 浮动 */
+.flo-l{float:left;}
+/* 盒子模型方式 */
+.borbox{box-sizing: border-box;}
+
+/* 表单样式 */
+.inp-box{border:1px solid #ccc;border-radius:5px;}
+/* 顶部固定 */
+.flex-top{position:fixed;top:0;}
+/* 移动端样式 */
+.bor1{border:1px solid rgb(85,138,228);}
+.bor-t2{border-top:2px solid #aaa;}
+.bor-rad5{border-radius:5px;}
+.bor-rad10{border-radius:10px;}
+.sign-butt{font-size:16px;width:80%;margin-left:10%;padding:5px 0;background: -webkit-linear-gradient(left,rgb(61,192,222), rgb(84,139,229));box-shadow:0 5px 10px rgb(86,137,229);}
+.linear-gra-butt{font-size:16px;width:50%;margin-left:25%;padding:5px 0;background: -webkit-linear-gradient(left,rgb(89,185,252), rgb(90,200,251));}
+.mark{width:100%;height:100%;background-color: rgba(0,0,0,.3);position: fixed;top:0;left:0;z-index:100;}
+.bor-inp{border:1px solid #ccc;}
+.over-scroll{overflow:scroll;}
+.over-hidd{overflow:hidden;}
+.nowarp{white-space:nowrap;}
+.inlin-blo{display:inline-block;}
