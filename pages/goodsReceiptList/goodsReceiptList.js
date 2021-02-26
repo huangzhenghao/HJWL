@@ -7,6 +7,7 @@ Page({
     loading: false,
     Getdoheadlist:[],
   },
+  // 初始化列表
   initList(){
     let tel = '';
     try {
