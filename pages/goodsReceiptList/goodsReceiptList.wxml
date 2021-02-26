@@ -1,13 +1,13 @@
-<view>
+<view class="flex flex-col cont-box">
     <my-header id="HEADER"></my-header>
-    <view class="sum-box flex around f12 bg2">
+    <view class="sum-box flex around middle f12 bg2">
         <Text>体积：{{goodsRexeList.fieidSum(Getdoheadlist, 'volume',2)}}</Text>
         <Text>重量：{{goodsRexeList.fieidSum(Getdoheadlist, 'weight',2)}}</Text>
         <Text>件数：{{goodsRexeList.fieidSum(Getdoheadlist, 'quan')}}</Text>
         <Text>订单：{{Getdoheadlist.length}}</Text>
     </view>
     <!-- 列表部分 -->
-    <scroll-view scroll-y="{{true}}" class="list-box">
+    <scroll-view scroll-y="{{true}}" class="list-box f1">
         <view class="li-box flex between" wx:for="{{Getdoheadlist}}">
             <view class="f1">
                 <view class="flex between f13">

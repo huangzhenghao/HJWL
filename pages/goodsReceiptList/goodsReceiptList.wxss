@@ -1,10 +1,12 @@
 /**index.wxss**/
 page{ background:#F6F2E9;}
+.cont-box{height:100vh;}
 .sum-box{
+    height:45rpx;
     background-color: rgb(222,222,222);
 }
 .list-box{
-    height:80vh;
+    
 }
 .li-box{
     padding:10px;
