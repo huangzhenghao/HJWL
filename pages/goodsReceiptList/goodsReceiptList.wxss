@@ -6,7 +6,7 @@ page{ background:#F6F2E9;}
     background-color: rgb(222,222,222);
 }
 .list-box{
-    
+    overflow: auto;
 }
 .li-box{
     padding:10px;
